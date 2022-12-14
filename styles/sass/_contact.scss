@@ -1,0 +1,33 @@
+.contact {
+    background-color: #F7DAE8;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        
+        nav {
+            display: flex;
+            flex-direction: row;
+            ul {
+                justify-content: center;
+            }
+        }
+
+    }
+    
+}
+.subscribeInfo {
+    width: 60%;
+    text-align: center;         
+    input[type=email] {
+        display: inline-block;
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 5px 20px;
+        width: 70%;
+    }
+}
+.contactInfo {
+    text-align: right;
+
+}

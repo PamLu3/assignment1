@@ -1,0 +1,38 @@
+section {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 3.75rem;
+    text-align: left;
+    margin-top: 0;
+}
+
+h2, 
+h3 {
+    line-height: 1.8rem;
+}
+
+h3 {
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+.product {
+    background: #F7DAE8;
+}
+
+.productFlex {
+    display: flex;
+    // flex-wrap: wrap;
+}
+.product {
+    .imageContainer {
+        margin-right: 40px;
+        width: 27%;
+    }
+
+    .textContainer {
+        width: 71%
+    }
+}

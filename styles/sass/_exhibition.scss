@@ -1,0 +1,45 @@
+.gallery{
+    h2{
+        text-align: center;
+    }
+}
+
+.gallery,
+.icons {
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.gallery,
+.icons{
+    li{ 
+       flex-basis: 32%;
+       text-align: center;
+    }
+}
+
+.brush,
+.paint {
+    display: flex;
+    // flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    height: 45vw;
+    img {
+        width: 50%;
+        // position: relative;
+    }
+    .textContainer {
+        padding: 20px;
+        width: 50%;
+    }
+}
+
+.brush {
+    flex-direction: row-reverse;
+}
+
+.paint {
+    flex-direction: row;
+}
