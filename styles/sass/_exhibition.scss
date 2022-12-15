@@ -22,16 +22,11 @@
 .brush,
 .paint {
     display: flex;
-    // flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    height: 45vw;
-    img {
+    .imageContainer {
         width: 50%;
-        // position: relative;
     }
     .textContainer {
-        padding: 20px;
+       align-self: center;
         width: 50%;
     }
 }

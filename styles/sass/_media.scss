@@ -1,0 +1,67 @@
+@media (max-width: 600px) {
+    // header nav turned to be sandwich icon
+
+    .productFlex {
+        flex-direction: column;
+        .imageContainer {
+            width: 100%;
+        }
+    }
+
+    .textContainer {
+        width: 100%;
+    }
+
+    .buttonRed,
+    .buttonBlue {
+        text-align: center;
+    }
+
+    .gallery {
+
+        li:last-child {
+            flex-basis: 0%
+        };
+        li {
+            flex-basis: 48%;
+        }
+        
+    }
+    .icons {
+        ul {
+            flex-direction: column;
+        }
+    }
+    .paint,
+    .brush {
+        .imageContainer {
+            width: 100%;
+        }
+        flex-direction: column;
+    }
+
+    .contact {
+        .wrapper {
+            flex-direction: column;
+            ul {
+                display: flex;
+                flex-direction: row;
+                li {
+                    justify-content: space-between;
+                }                
+            }
+            .subscribeInfo{
+                width: 100%;
+                input[type=email] {
+                    width: 100%;
+                }
+            }
+
+            .contactInfo {
+                text-align: center;
+            }
+        }
+    }
+
+
+}

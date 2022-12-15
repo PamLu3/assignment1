@@ -231,6 +231,10 @@ html {
   color: #201E21;
 }
 
+body {
+  background-color: #F7DAE8;
+}
+
 h1,
 h2,
 h3,
@@ -259,7 +263,7 @@ nav {
 }
 
 .wrapper {
-  margin: 0 auto;
+  margin: 30px auto;
   width: 85%;
   max-width: 1080px;
 }
@@ -271,7 +275,7 @@ ul {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
   height: auto;
 }
@@ -318,10 +322,8 @@ nav a {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-}
-
-section {
-  padding: 100px 0;
+  line-height: 29px;
+  letter-spacing: 0.2px;
 }
 
 h2 {
@@ -384,17 +386,15 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  padding: 0;
-  height: 45vw;
 }
-.brush img,
-.paint img {
+.brush .imageContainer,
+.paint .imageContainer {
   width: 50%;
 }
 .brush .textContainer,
 .paint .textContainer {
-  padding: 20px;
+  -ms-flex-item-align: center;
+      align-self: center;
   width: 50%;
 }
 
@@ -423,19 +423,17 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contact .wrapper nav {
+.contact .wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.contact .wrapper nav ul {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .subscribeInfo {
@@ -463,4 +461,77 @@ footer p {
   padding: 10px 0;
   color: #ffE9E9;
   font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .productFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .productFlex .imageContainer {
+    width: 100%;
+  }
+  .textContainer {
+    width: 100%;
+  }
+  .buttonRed,
+.buttonBlue {
+    text-align: center;
+  }
+  .gallery li:last-child {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+  }
+  .gallery li {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+  .icons ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .paint,
+.brush {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .paint .imageContainer,
+.brush .imageContainer {
+    width: 100%;
+  }
+  .contact .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .wrapper ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact .wrapper ul li {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact .wrapper .subscribeInfo {
+    width: 100%;
+  }
+  .contact .wrapper .subscribeInfo input[type=email] {
+    width: 100%;
+  }
+  .contact .wrapper .contactInfo {
+    text-align: center;
+  }
 }

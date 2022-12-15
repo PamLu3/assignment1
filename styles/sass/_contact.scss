@@ -4,12 +4,10 @@
         display: flex;
         justify-content: space-between;
         
-        nav {
+        ul {
             display: flex;
-            flex-direction: row;
-            ul {
-                justify-content: center;
-            }
+            flex-direction: column;
+            justify-content: end;
         }
 
     }
